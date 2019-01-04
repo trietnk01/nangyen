@@ -1,0 +1,151 @@
+.single-product-img{
+	.box-img{
+		margin-bottom: 0;
+	}
+}
+
+.wrap-gallery-list{
+	margin-top: 20px;
+	position: relative;
+	@media(min-width: 1024px){
+		margin-top: 32px;				
+	}
+}
+
+.owl-control.owl-control-gallery-list{
+	>div{
+		height: 25px;
+		width: 25px;
+		line-height: 25px;
+		&.btn-left{
+			margin-left: -12px;
+		}
+		&.btn-right{
+			margin-right: -12px;
+		}
+	}
+}
+.gallery_sync2{
+	.owl-item{
+		opacity: 0.6;
+		&.current{
+			opacity: 1;
+		}
+	}
+}
+
+
+.single-product-info{
+	.sp-label{
+		color: #c80000;
+		font-size: 30px;
+		font-family: $f2_df;
+	}
+	.sp-number{
+		color: #c80000;
+		font-size: 30px;
+		font-family: $f2_df;	
+	}
+	h1{
+		margin-bottom: 5px;
+		margin-top: 30px;
+		@media(min-width: 1024px){
+			margin-top: 0px;				
+		}
+	}
+	.-des{
+		margin-top: 10px;
+		@media(min-width: 1024px){
+			margin-top: 30px;				
+		}
+	}
+	.-hotline{
+
+		font-size: 22px;
+		color: #5b0000;
+		text-transform: uppercase;
+		text-align: center;
+	    padding: 4px 30px;
+	    margin-top: 15px;
+	    
+	    // display: block;
+		@media(min-width: 1024px){
+			margin-top: 40px;	
+			display: inline-block;
+		}
+	    
+	}
+	.-social{
+		margin-top: 15px;
+		@media(min-width: 1024px){
+			margin-top: 30px;				
+		}
+	}
+}
+
+.product-main-info{
+	margin-top: 35px;				
+	@media(min-width: 1024px){
+		margin-top: 58px;				
+	}
+	.nav-tabs{
+		border-bottom: 1px solid $c1;
+		.nav-link{
+			font-size: 26px;
+			color: $c-white;
+			font-family: $f2_df;
+			&.active{
+				background:$c1;
+				border: none;
+			}
+		}
+	}
+	h3{
+		margin-top: 33px;
+		font-size: 18px;
+		font-family: $f_bold;
+	}
+}
+
+/*------product related----*/
+
+.product-related{
+	margin-top: 30px;
+	@media(min-width: 1024px){	
+		margin-top: 60px;
+	}
+	.-heading{
+		color: $c-white;
+		font-size: 30px;
+		margin-bottom: 25px;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+		    bottom: -9px;
+		    height: 1px;
+		    width: 100%;
+		    background: #fff;		
+		}
+
+		@media(min-width: 1024px){
+			font-size: 35px;
+			margin-bottom: 45px;
+		}
+	}
+
+}
+.owl-control-related{
+    position: absolute;
+    top: -72px;
+    right: 0;	
+    @media(max-width: 991px){
+	    bottom: 0;
+	    top: inherit;
+	    left: 50%;
+	    margin-bottom: -20px;
+	    text-align: center;
+	    @include p-web(transform,translateX(-50%));
+    }	
+}

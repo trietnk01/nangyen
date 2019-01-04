@@ -1,0 +1,36 @@
+.search-form{
+	div{
+		position: relative;
+	}
+	input{
+		max-width:100%;
+		width:100%;
+		display:block !important;
+		padding:10px 10px;
+		padding-right:50px;
+		outline:none;
+		border-radius:2px;
+		border:1px solid rgba(0,0,0,.12);
+
+		&:focus{
+			border-color:$mau;
+		}
+	}
+
+	button{
+		position: absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		padding-left:15px;
+		padding-right:15px;
+
+		background:none;
+		border:none;
+		outline:none;
+		&:hover{
+			color:white;
+			background:$mau;
+		}
+	}
+}

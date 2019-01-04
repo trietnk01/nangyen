@@ -1,0 +1,18 @@
+.sect-breadcrum-w{
+	background: transparent;
+	border-bottom: 1px solid rgba($line1,0.6);
+	a,span{
+		color: $c-white;
+		font-family: $f_light;
+	    margin-left: 4px;
+	    margin-right: 12px;
+	    @media(max-width: 991px){
+	    	font-size: 14px;
+	    }
+	}
+	a{
+		&:hover{
+			color: $c2;
+		}
+	}
+}	

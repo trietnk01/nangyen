@@ -1,0 +1,53 @@
+.ui-slider-horizontal{
+	height: .4em;
+	width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ui-slider .ui-slider-handle{
+    border-radius: 50%;
+    top: -.4em;
+}
+.ui-widget-content{
+	.ui-state-active{
+		outline: none;
+		background: #fff;
+		border: none;	
+	}	
+}
+.ui-state-active{
+	outline: none;
+	background: #fff;
+	border: none;
+}
+.custom-control-label{
+	&:before{
+		background:#5b0000;
+	}
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+	background:#5b0000;
+	border: none;
+}
+.custom-checkbox .custom-control-label::before{
+	border-radius: 0;
+
+}
+
+/*---------lightbox--------*/
+.sl-wrapper{
+	.sl-close{
+		color: $c-white;
+	}
+	.sl-navigation button{
+		color: $c-white;
+	}
+	.sl-counter{
+		color: $c1;
+	}
+}
+.loop-ani{
+	animation-iteration-count:infinite;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+}

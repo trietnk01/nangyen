@@ -1,0 +1,21 @@
+// ---------------------------------------
+// Add font
+// ---------------------------------------
+
+//@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&amp;subset=latin-ext,vietnamese');
+
+
+// .f-{font}
+@include p-font('Roboto-Regular','../font/Roboto/Roboto-Regular.ttf'); 
+@include p-font('Roboto-Bold','../font/Roboto/Roboto-Bold.ttf');
+@include p-font('Roboto-Medium','../font/Roboto/Roboto-Medium.ttf');
+@include p-font('Roboto-Light','../font/Roboto/Roboto-Light.ttf');
+
+$f_df:'Roboto-Regular', arial , serif;
+$f_bold:'Roboto-Bold', arial , serif;
+$f_medium:'Roboto-Medium', arial , serif;
+$f_light:'Roboto-Light', arial , serif;
+
+$font_body:  $f_df , arial , serif !important;
+
+

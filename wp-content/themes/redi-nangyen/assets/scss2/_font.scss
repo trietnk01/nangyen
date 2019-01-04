@@ -1,0 +1,140 @@
+// ---------------------------------------
+// Add font
+// ---------------------------------------
+
+//@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&amp;subset=latin-ext,vietnamese');
+
+
+// .f-{font}
+@include p-font('Philosopher-Regular','../font/philosopher/Philosopher-Regular.ttf'); 
+@include p-font('Philosopher-Bold','../font/philosopher/Philosopher-Bold.ttf');
+@include p-font('Philosopher-Italic','../font/philosopher/Philosopher-Italic.ttf');
+@include p-font('Philosopher-Light','../font/philosopher/Philosopher-Light.ttf');
+
+@include p-font('Roboto-Regular','../font/roboto/Roboto-Regular.ttf'); 
+@include p-font('Roboto-Bold','../font/roboto/Roboto-Bold.ttf');
+@include p-font('Roboto-Italic','../font/roboto/Roboto-Italic.ttf');
+@include p-font('Roboto-Light','../font/roboto/Roboto-Light.ttf');
+
+
+//open sans
+
+@include p-font('OpenSans-Regular','../font/opensans/OpenSans-Regular.ttf'); 
+@include p-font('OpenSans-SemiBold','../font/opensans/OpenSans-SemiBold.ttf');
+@include p-font('OpenSans-Bold','../font/opensans/OpenSans-Bold.ttf');
+@include p-font('OpenSans-BoldItalic','../font/opensans/OpenSans-BoldItalic.ttf');
+@include p-font('OpenSans-Medium','../font/opensans/OpenSans-Medium.ttf');
+@include p-font('OpenSans-Light','../font/opensans/OpenSans-Light.ttf');
+
+//k2d
+@include p-font('K2D-Regular','../font/k2d/K2D-Regular.ttf'); 
+@include p-font('K2D-Medium','../font/k2d/K2D-Medium.ttf');
+@include p-font('K2D-SemiBold','../font/k2d/K2D-SemiBold.ttf');
+@include p-font('K2D-Bold','../font/k2d/K2D-Bold.ttf');
+@include p-font('K2D-BoldItalic','../font/k2d/K2D-BoldItalic.ttf');
+
+@include p-font('K2D-Light','../font/k2d/K2D-Light.ttf');
+
+
+//hevetical neav
+
+@include p-font('Helveticaneue-Regular','../font/helveticaneue/helveticaneue.ttf'); 
+@include p-font('Helveticaneue-Bold','../font/helveticaneue/helveticaneuebold.ttf');
+@include p-font('Helveticaneue-iBold','../font/helveticaneue/helveticaneuebolditalic.ttf');
+@include p-font('Helveticaneue-Medium','../font/helveticaneue/helveticaneuemedium.ttf');
+@include p-font('Helveticaneue-Light','../font/helveticaneue/helveticaneuelight.ttf');
+
+@include p-font('Montserrat-Regular','../font/montserrat/Montserrat-Regular.ttf'); 
+@include p-font('Montserrat-Bold','../font/montserrat/Montserrat-Bold.ttf');
+@include p-font('Montserrat-iBold','../font/montserrat/Montserrat-iBold.ttf');
+@include p-font('Montserrat-Medium','../font/montserrat/Montserrat-Medium.ttf');
+@include p-font('Montserrat-Light','../font/montserrat/Montserrat-Light.ttf');
+
+
+//sfu function
+
+@font-face {
+    font-family: 'SFU Function';
+    src: url('../font/sfu/SFUFunctionCondensed.eot');
+    src: url('../font/sfu/SFUFunctionCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../font/sfu/SFUFunctionCondensed.woff2') format('woff2'),
+        url('../font/sfu/SFUFunctionCondensed.woff') format('woff'),
+        url('../font/sfu/SFUFunctionCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+$f_df:'Roboto-Regular', arial , serif;
+$f_medium:'Roboto-Medium', arial , serif;
+$f_sbold:'Roboto-sBold', arial , serif;
+$f_bold:'Roboto-Bold', arial , serif;
+$f_ibold:'Roboto-iBold', arial , serif;
+$f_light:'Roboto-Light', arial , serif; 
+
+$f2_df:'SFU Function', arial , serif;
+
+// $f2_medium:'K2D-Medium', arial , serif;
+// $f2_sbold:'K2D-SemiBold', arial , serif;
+// $f2_bold:'K2D-Bold', arial , serif;
+// $f2_ibold:'K2D-BoldItalic', arial , serif;
+// $f2_light:'K2D-Light', arial , serif; 
+
+.f-df{
+	font-family: $f_df;
+}
+.f-bold{
+	font-family: $f_bold;
+}
+.f-ibold{
+	font-family: $f_ibold;
+}
+.f-medium{
+	font-family: $f_medium;
+}
+.f-light{
+	font-family: $f_light;
+}
+
+.f2-df{
+	font-family: 'SFU Function';
+}
+.f2-bold{
+	font-family: $f_bold;
+}
+.f2-sbold{
+	font-family: $f_sbold;
+}
+.f2-ibold{
+	font-family: $f_ibold;
+}
+.f2-medium{
+	font-family: $f_medium;
+}
+.f2-light{
+	font-family: $f_light;
+}
+// .f2-df{
+// 	font-family: $f2_df;
+// }
+// .f2-bold{
+// 	font-family: $f2_bold;
+// }
+// .f2-ibold{
+// 	font-family: $f2_ibold;
+// }
+// .f2-sbold{
+// 	font-family: $f2_sbold;
+// }
+// .f2-medium{
+// 	font-family: $f2_medium;
+// }
+// .f2-light{
+// 	font-family: $f2_light;
+// }
+
+$font_body:  $f2_df;
+
+

@@ -1,0 +1,39 @@
+.header-top{
+    background-color: $c1;
+    padding: 7px 0;
+    &-line{
+        display: flex;
+        justify-content:space-between;        
+    }
+    &-social{
+
+    }
+    &-hotline{
+        i{
+            color: $c2;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            border:1px solid $c2;
+            margin-right: 6px;
+            font-size: 12px;
+        }
+    }
+}
+.header-logo{
+	position: absolute;
+    top: -28px;
+    z-index: 5;
+}
+.head-wrap-menu{
+	margin-top: 22px;
+    margin-bottom: 25px;
+}
+
+.line-bg-gradient{
+	height: 6px;
+	width: 100%;
+	background-image: linear-gradient(to right, #efcb87 0%, #f8efe3 30%, #c68727 60%, #eec78c 80%);
+}

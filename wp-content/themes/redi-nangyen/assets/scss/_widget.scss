@@ -1,0 +1,286 @@
+.sidebar-blog,
+.sidebar-footer{
+
+	// thành phần thứ 2 trở đi cách nhau 30px
+	&:not(:first-child){
+		margin-top:20px;
+	}
+
+	// h4 title
+	.wg-title{
+	font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color:black;
+    margin-bottom: 10px;
+    margin-top:0px;
+    line-height:1.5;
+	}
+
+	// text
+	.textwidget{
+		line-height:1.5;
+	}
+	
+	// archive, meta, post
+	ul{
+		padding-left:0px;
+		list-style-type:none;
+		margin-bottom:0px;
+		li{
+			
+			
+			&:not(:first-child){
+			padding-top:3px;	
+			}
+			&:not(:last-child){
+			padding-bottom:3px;
+			}
+
+
+			a{
+				color: rgba(0,0,0,.7);
+				&:hover{
+				color: rgba(0,0,0,1);	
+				}
+			}
+		}
+	}
+	
+	// Post underline
+	&.widget_recent_entries ul li{
+		border-bottom:1px solid rgba(237, 225, 225, 0.12);
+		padding-top:5px;
+		padding-bottom:5px;
+
+		&:first-child{
+			padding-top:0px;
+		}
+
+		&:last-child{
+			padding-bottom:0px;
+			border-bottom:0px;
+		}
+
+		// Date
+		span{
+			font-size:11px;
+			color: rgba(151,151,151, .7);	
+			display: block;
+			&:before{
+				content:"( ";
+			}
+			&:after{
+				content: " )";
+			}
+		}
+
+	}
+
+	// tag
+	.tagcloud{
+		a{
+			display: inline-block;
+		    margin: 0 2px 6px 0;
+		    padding: 6px 12px;
+		    color: rgba(0,0,0,.87);
+		    border-radius:2px;
+		    background: #e0e0e0;
+		    font-size:13px !important;
+		    &:hover{
+		    	background: #212121;
+    			color: #fff;
+		    }
+		}
+	}
+	
+	// page
+	// menu
+	&.widget_pages ul,
+	.menu{
+		li{	
+			//clear ptb li
+			padding-bottom:0px;
+			&:not(:first-child){
+			padding-top:0px;	
+			}
+
+			a{	
+				padding-bottom:5px;
+				border-bottom:1px solid rgba(0,0,0,.12);
+				display:block;
+
+				&:not(:only-child):after{
+					content: "\f0d7";
+					font-family:FontAwesome;
+					margin-left:5px;
+					font-size:16px;
+				}
+
+			}
+
+			&:not(:first-child){
+				a{
+					padding-top:5px;
+				}
+			}
+
+			ul.children,ul.sub-menu{
+				li{	
+					// padding-top:5px;
+					// padding-left:20px;
+					a{
+						padding-top:5px;
+						padding-left:10px;
+						
+						&:not(:only-child):after{
+							display:none;
+						}
+
+						&:before{
+							content: "\f0da";
+							font-family:FontAwesome;
+							font-size:16px;
+							margin-right:5px;
+						}
+					}
+					
+					// sub 3
+					ul li a{
+						padding-left:20px;
+					}
+					
+					// sub 4
+					ul ul li a{
+						padding-left:30px;
+					}
+				}
+			} // ul
+		
+		} // li
+	}// ul
+	
+
+	// comment
+	li.recentcomments{
+		border-bottom:1px solid rgba(0,0,0,.12);
+		
+		// name author
+		span{
+			a{
+				color:rgba(0,0,0,1);
+			}
+		}
+		
+		// title post
+		a{
+			color:rgba(0,0,0,.5);
+			&:hover{
+			color:rgba(0,0,0,.5);	
+			}
+		}
+
+	}
+
+	// calendar
+	.calendar_wrap{
+		caption{
+			text-align:center;
+			border-bottom:1px solid rgba(0,0,0,.12);
+			margin-bottom:10px;
+		}
+		table{
+			border-spacing: 0;
+		    width: 100%;
+		    border-collapse: separate;
+			
+			th{
+				background:#f8f8f8;
+			}
+		    th,td{
+		    	text-align:center;
+		    	padding:3px;
+		    }
+
+		    td{
+		    	a{
+		    		color: rgba(0,0,0,1);
+		    		text-decoration:underline;
+		    		font-weight:bold;
+		    	}
+		    }
+
+
+		    // tbody{
+		    // 	tr th{
+		    // 		text-align:center;
+		    // 	}
+		    // }
+		}
+	}
+	
+}
+
+
+@media (max-width:991px){
+
+.sidebar-blog,
+.sidebar-footer{
+
+	// thành phần thứ 2 trở đi cách nhau 30px
+	&:not(:first-child){
+		margin-top:20px;
+	}
+
+}
+
+}
+
+
+
+// modify
+
+// footer change background black 70%
+.section-footer{
+	background:#1c1d1b;
+	color:white;
+
+
+	a{
+		color:#959595;
+	}
+
+
+}
+
+// wg footer change size and tag a, tagcloud
+.sidebar-footer{
+	.wg-title{
+		color:#959595;
+		font-size:20px;
+		text-transform:capitalize;
+		font-weight: 300;
+	}
+
+	ul{
+		 li{
+		 	border-bottom:1px dotted #272727;
+		 	a{
+		 		color:white;
+		 		&:hover{
+		 			color:$mau;
+		 		}
+		 	}
+		 }
+	}
+	.tagcloud{
+		a{
+			background:#343436;
+			color:#959595;
+
+		}
+	}
+}
+
+
+

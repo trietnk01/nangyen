@@ -1,0 +1,18 @@
+// ---------------------------------------
+// Add var
+// ---------------------------------------
+
+$mau:#d54e21; 
+$mau_dam:darken($mau,5%);
+$mau_nhat:lighten($mau,5%);
+
+$mau2:#7fb100;
+$mau2_dam:darken($mau2,5%);
+$mau2_nhat:lighten($mau2,5%);
+
+@include p-mau( 'mau', $mau );
+
+@include p-mau( 'mau2', $mau2 );
+
+
+

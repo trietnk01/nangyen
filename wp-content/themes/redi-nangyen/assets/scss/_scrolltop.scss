@@ -1,0 +1,55 @@
+.icon-top{
+	@include p-web(transition,all 0.25s);
+
+	position: fixed;
+	right:1%;
+	bottom:-40px;
+	z-index:999; /* * */
+	visibility: hidden;
+
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+
+	border-radius:50%;
+	background:black;
+	color:white;
+	font-size:16px;
+	
+	opacity:0;
+	cursor:pointer;
+	
+	&.active{
+		bottom:2%;
+		opacity:0.8;
+		visibility:visible;
+
+		&:hover{
+			opacity: 1;
+			background:$mau;
+			// box-shadow: 0 0 50px 0 rgba(0,0,0,.5);
+		}
+
+	}
+}
+
+
+
+@media screen and (max-width:767px){
+
+	.icon-top{
+		width:30px;
+		height:30px;
+		line-height:30px;
+		font-size:12px;
+		
+		&.active{
+			opacity:0.5;
+			&:hover{
+				opacity:1;
+			}
+		}
+	}	
+
+}

@@ -1,0 +1,75 @@
+.wrap-hotline{
+	position: fixed;
+	top: 50%;
+	right: 20px;
+	z-index: 100;
+	animation: hotline-ani 11s infinite; 
+}
+.hotline{
+	&-typeicon{
+		background-image: -webkit-linear-gradient(bottom, #79572b, #f8c878);
+		background-image: -o-linear-gradient(bottom, #79572b, #f8c878);
+		background-image: linear-gradient(to top, #79572b, #f8c878);
+		padding: 3px;
+		border-radius: 6px;
+	}
+	&-outner{
+		background: $c1;
+		border-radius: 6px;
+		padding: 9px 16px 9px 50px;
+	}
+	&-spicon{
+		height: 35px;
+		width: 35px;		
+		color: $c2;
+		font-size: 22px;
+		background: #fff;
+		@include v-center(center);
+		position: absolute;
+		left: 10px;
+		top: 50%;
+	    border-radius: 50%;
+		@include p-web(transform,translateY(-50%));
+		&:before{
+			content: '';
+			position: absolute;
+		    bottom: -4px;
+		    left: 38%;
+		    border-top: 6px solid #fff;
+		    border-left: 6px solid transparent;
+		    border-right: 6px solid transparent;
+			// border-bottom: 0 solid transparent; 
+			
+		}
+	}
+	&-title{
+		font-size: 12px;
+		color: $c-white;
+		display: block;
+	}
+	&-number{
+		font-size: 17px;
+		color: $c2;
+		font-weight: bold;
+		display: block;
+		margin-top: -5px;
+	}
+}
+
+@keyframes hotline-ani {
+    0% {
+    	right: -100%;
+    }
+    25% {
+    	right: 0px;
+    }
+    50% {
+    	right: 0px;
+    }
+    75% {
+    	right: 0px;
+    }
+    100% {
+    	right: -100%;
+    }
+}

@@ -1,0 +1,228 @@
+/* The container */
+.input-inline {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.input-inline input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid $line3;
+    &.circle{
+        border-radius: 50%;
+    }
+}
+
+/* On mouse-over, add a grey background color */
+.input-inline:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.input-inline input:checked ~ .checkmark {
+    background-color: transparent;
+    border: 1px solid $line3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.input-inline input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.input-inline .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid $bg1;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.input-inline .checkmark.circle:after {    
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $bg1;
+    @include p-web(transform,translate(-50%,-50%));
+    
+}
+
+
+/*---------form control modify-------------*/
+
+.form-filter-sv{
+    text-align: center;
+    label{
+        color: $c1;
+        font-size: 14px;
+    }
+    select{
+        border-radius: 0;
+        border: 1px solid $line1;
+        width: 100%;
+        max-width: 437px;
+        height: 40px;
+        color: #737373;
+        @media(min-width: 1366px){
+            padding-right: 100px;
+            margin-left: 20px;
+        }
+        
+    }
+}
+
+.wrap-form-register{
+    background: url('../img/iei/bg-form.png') no-repeat center/contain;
+    background-size: 100% 100%;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-register{
+    padding: 30px 10px 30px;
+     @media(min-width: 1036px){
+            
+           padding: 30px 30px 30px;
+        }
+    .-heading{
+        font-size: 18px;
+        font-family: $f_bold;
+        color: $c1;
+        margin-bottom: 20px;
+        @media(max-width: 991px){
+            margin-bottom: 0;
+        }
+    }
+    .form-inline{
+        margin-bottom: 12px;
+        label{
+            width: 190px;
+        }
+        textarea{
+            height: 90px;
+            width: 100%;
+            @media(min-width: 1366px){
+                height: 136px;
+                width: calc(100% - 200px);
+                max-width: 100%;
+            }
+        }
+    }
+    .form-control{
+        border-radius: 3px;
+        
+        border-color: #cbcbcb;
+        width: 100%;
+        @media(min-width: 1036px){
+            max-width: 280px;    
+        }
+
+    }
+    .capchar-input{
+       width: 100%;
+         @media(min-width: 1036px){
+            
+            max-width: 147px;
+            
+        }
+    }
+    .capchar-number{
+        border:none;
+        height: 34px;
+        font-size: 1.5em;
+        max-width: 100px;
+        min-width: 100px;
+        background: url('../img/iei/bg-capchar.jpg') no-repeat center/cover;   
+        margin-top: 12px;
+        @media(min-width: 1200px){
+            margin-top: 0px;
+        }     
+    }
+    button[type="submit"]{
+        font-size: 15px;
+        min-width: 105px;
+        border-radius: 3px;
+    }
+    .lb-hidden-sm{
+        @media(max-width: 1024px){
+            display: none;
+        }
+    }
+}
+.form-booking{
+    label{
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+        text-transform: uppercase;
+        @media(min-width: 1366px){
+            font-size: 20px;
+        }
+        img{
+            vertical-align: middle;
+        }
+    }
+    .form-control{
+        margin-bottom: 10px;
+        @media(min-width: 1366px){
+            margin-bottom: 25px;
+        }
+    }
+}
+/*-----form booking-----*/
+.wrap-form-booking{
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+input.date-picker{
+    position: relative;
+    padding-right: 40px;
+    background: url('../img/dila/icon-calendar.png') no-repeat right 10px top 5px;
+    // &::before{
+    //     background: url('../img/dila/svg/icon-calendar.svg');
+    //     display: block;
+    //     content: '';
+    //     position: absolute;
+    //     width: 15px;
+    //     height: 15px;        
+    //     top: 12px;
+    //     right: 6px;       
+    // }
+}

@@ -1,0 +1,53 @@
+.button-controls{
+	
+	a{
+		width: 100%;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-family: 'Arimo-Bold';
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+.wrap-u-account{
+	border:1px solid $line2;
+	padding: 20px 30px;
+}
+.user-account{
+	display: table;
+	.u-logo{
+		display: table-cell;
+	}
+	.content{
+		display: table-cell;
+		vertical-align: top;
+		padding-left: 20px;
+		h4{
+			margin-bottom: 3px;
+			color: $c-second;
+			font-size: 16px;
+			
+			span{
+				position: relative;	
+				display: inline-block;
+				&:after{
+				content: '';
+				background: url('../img/tbds/icon_check.png') no-repeat center/contain;
+				height: 18px;
+				width: 18px;
+				position: absolute;
+				    left: 105%;
+				bottom: 3px;
+			}
+			}	
+			
+		}
+		p{
+			color: $c-des;
+			font-size: 14px;
+		}
+	}
+	.img{
+		max-width: 74px;
+	}
+}

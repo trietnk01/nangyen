@@ -1,0 +1,219 @@
+// $media:0 1199 991 767 480 320;	
+// @each $medias in $media{
+// 	@if($medias == 0){
+// 		.p-h-500{ height:500px;}
+
+// 	} @else{ @media (max-width:#{$medias+px}){
+		
+// 		.p#{$medias}-h-500{ height:500px;}
+
+
+// 	}}
+// }
+
+
+
+
+
+// ---------------------------------------------------------------
+//	Start
+// ---------------------------------------------------------------
+// html{
+// 	height:100%;
+// 	overflow: hidden;
+// }
+
+
+body{
+	font-family:$font_body;
+	font-size:14px;
+	color:black;
+
+	max-width:100%;
+	width:100%;
+	overflow-x:hidden;
+	@include p-web(word-wrap,break-word);
+	@include p-web(box-sizing,border-box);
+	line-height:1.5;
+	position:relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+
+
+   // perspective: 1px;
+	//transform-style: preserve-3d;
+
+	// height: 100%;
+}
+
+@media (max-width:767px){
+	body{
+		//perspective: 0px !important;
+		//transform-style:none !important;
+	}
+}
+
+
+// apply google chrome
+// .div-bg-paralax{
+// 	height: 100vh;
+// 	background: url('../img/no-img.jpg') no-repeat center/cover;
+// 	@include p-web(transform,translateZ(-1px) scale(2));
+// }
+
+// @media (max-width:767px){
+// 	.div-bg-paralax{
+// 		transform: none;	
+// 	}
+
+// }
+
+
+.p-con-h-auto img{
+	height:auto !important;
+}
+
+.list-inline1 li{
+	display: inline-block;
+}
+
+
+img{ max-width:100%; @include p-web(backface-visibility,hidden !important) }  
+
+// Default
+a{
+	color:$mau;
+	text-decoration:none;
+
+	&:hover,
+	&:focus{
+		text-decoration:none;
+	}
+
+	&:hover{
+		color:$mau_dam;
+	}
+	
+	&.x{
+		color:#9e9e9e;
+	}
+	
+	&.w{
+		color:white;
+	}
+
+	&.b{
+		color:black;
+	}
+	
+	&.full-box{
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index: 20;
+	}
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, 
+h1, h2, h3, h4, h5, h6{
+	margin-top:0px;
+	margin-bottom:0px;
+	
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// Setup
+// -----------------------------------------------------------------------------------------------------------
+
+
+.p-h-title{
+	font-size:30px;
+	color:$mau;
+	font-weight: bold;
+
+	&.w{
+		color:white;
+	}
+
+	&.b{
+		color:black;
+	}
+
+	&.x{
+		color:#9e9e9e;
+	}
+
+}
+
+@media (max-width:991px){
+	.p-h-title{
+		font-size:25px;
+	}
+}
+
+@media (max-width:767px){
+	.p-h-title{
+		font-size:22px;
+	}
+}
+
+
+.p-h-content{
+	font-size:20px;
+	color:$mau;
+	font-weight: bold;
+
+	&.w{
+		color:white;
+	}
+
+	&.b{
+		color:black;
+	}
+
+	&.x{
+		color:#9e9e9e;
+	}
+
+}
+
+.p-hr-title{
+	max-width:70px;
+	height:2px;
+	margin-top:10px;
+	margin-bottom:0px;
+	background:$mau;
+	border-top:0px;
+	&.w{
+		background:white;
+	}
+	&.le{
+		margin-left:0;	
+	}
+	&.ri{
+		margin-right:0;
+	}
+}
+
+.p-overlay{
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	background:rgba(black,.4);
+	z-index:10;
+}
+
+
+.p-wg-title{
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+color:black;
+
+margin-top:0px;
+line-height:1.5;
+}

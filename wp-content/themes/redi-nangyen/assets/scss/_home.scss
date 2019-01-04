@@ -1,0 +1,284 @@
+// ------------------------------
+// Menu mobile
+// ------------------------------
+
+.sc-menu-fixed{
+    background:white;
+    width:100%;
+    
+
+    &.fixed{
+      position:fixed;
+      top:0;
+      left:0;
+      @include p-web(box-shadow,1px 1px 5px rgba(black,0.5));
+      z-index:90;
+      
+    }
+}
+
+// left
+.bars-fixed-left{
+  position:absolute;
+  left:15px;
+  top:50%;
+  @include p-web(transform,translateY(-50%));
+  z-index:2;
+}
+
+// right
+.bars-fixed-right{
+  position:absolute;
+  right:15px;
+  top:50%;
+  @include p-web(transform,translateY(-50%));
+    z-index:2;
+}
+
+
+.sumon-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(black,.8);
+  display:none;
+   z-index:99;
+  &.active{
+    display:block;
+  }
+
+  i{
+    position:absolute;
+    top:15px;
+    right:15px;
+    color:white;
+    cursor: pointer;
+    font-size:25px;
+
+    &:hover{
+      @include p-web(transition,all 300ms ease);
+      @include p-web(transform, rotate(180deg)  );
+    } 
+  }
+}
+
+
+// sc sumon click
+.sc-menu-sumon-fixed{
+  max-width:220px;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:-100%;
+  height:100vh;
+  background:white;
+  z-index:100;
+  padding:30px 15px;
+  overflow-y:auto;
+
+  @include p-web(transition,all 300ms ease);
+
+  &.active{
+    left:0;
+  }
+}
+
+
+// menu mobile 
+.list-menu-sumon-fixed{
+  li{
+    display:block;
+    width:100%;
+     position:relative;
+
+
+    &+li{
+      border-top:1px solid #dfdfdf;
+    }
+    
+    &.current-menu-item,
+    &:hover{
+        >a{
+          color:$mau;
+        }
+      }
+
+
+    a{
+      color:black;
+      display:block;
+      padding-top:12px;
+      padding-bottom:12px;
+      position:relative;
+
+
+    } //a
+
+    i{
+      position:absolute;
+      top:10px;
+      right:0;
+      // @include p-web(transform, translateY( -50% ));
+      @include p-tron(30px);
+      background:$mau;
+      color:white;
+      font-size:16px;
+      @include p-web(transition, all 300ms ease);
+      
+      &:hover{
+        opacity:0.8;
+      }
+
+      &.active{
+          @include p-web(transform, rotate(-180deg) );
+      }
+    }
+  
+    ul{
+      padding-left:0px;
+      display:none;
+
+      a{
+        font-size:13px;
+      }
+      i{
+        font-size:13px;
+        @include p-tron(25px);
+      }
+
+      &.active{
+        display:block;
+      }
+    }
+
+    &:hover{
+
+    } // li:hover
+
+  } // li
+}
+
+
+
+
+
+// ------------------------------
+// Menu primary
+// ------------------------------
+
+.list-menu-1{
+  li{
+    position: relative;
+    padding-left:0px;
+    padding-right:0px;
+
+    &.current-menu-item{
+      >a{
+         background:darken($mau,5%); 
+      }
+    }
+  
+    a{
+      display:block;
+      color:white;
+      padding:10px 20px;
+      // pointer-events:none;
+  
+      &:not(:only-child):after{
+        content:'\f0d7';
+       font:normal normal normal 14px/1 FontAwesome;
+       margin-left:5px;
+      }
+
+    }
+
+    ul{
+      position:absolute;
+      padding-left:0px;
+      margin-bottom:0px;
+      top:calc(100% - 10px);
+      left:0px;
+      list-style:none;
+      width:200px;
+      z-index:999;
+      @include p-web(transition,all 300ms ease);
+      background:$mau;
+      visibility:hidden;
+      pointer-events:none;
+      opacity: 0;
+
+      ul{
+        top:calc(0% - 10px);
+        left:100%;
+         @include p-web(transition,all 300ms ease);
+      }
+  
+      a{
+        &:not(:only-child):after{
+          content:'\f0da';
+         font:normal normal normal 14px/1 FontAwesome;
+         margin-left:5px;
+        }
+      }
+
+    }
+    
+    &:hover{
+      >a{
+           background:darken($mau,5%); 
+        }
+      
+      >ul{
+        top:100%;
+        visibility:visible;
+        pointer-events:auto;
+        opacity:1;
+
+        li:hover{
+          >ul{
+            top:0;
+          }
+        }
+        
+      }
+
+    }// hover li
+
+  }// li
+}
+
+
+
+
+
+
+
+
+//footer
+.list-icon-footer{
+  li{
+    padding-left:2px;
+    padding-right:2px;
+      a{
+        i{
+          width:30px;
+          height:30px;
+          line-height:30px;
+          text-align:center;
+           border-radius: 50%;
+          background:white;
+         
+          color:black;
+        }
+        &:hover{
+          
+            i{
+              background:$mau;
+              color:white;
+            }
+        }
+      }
+  }
+}
