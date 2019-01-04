@@ -1,3 +1,3 @@
-<?php 
-include "category.php";
+<?php 
+include "category.php";
 ?>

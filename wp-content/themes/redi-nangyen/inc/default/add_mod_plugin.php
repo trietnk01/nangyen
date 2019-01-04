@@ -1,4 +1,4 @@
-<?php
-/*
-	Mod plugin
+<?php
+/*
+	Mod plugin
 */
