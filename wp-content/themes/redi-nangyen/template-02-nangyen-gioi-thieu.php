@@ -47,7 +47,7 @@ Template Post Type: post, page
 
 				<?php foreach ($source_img as $key => $value) { ?>
 
-				<div class="box-line-img">
+				<div class="box-line-img" style="border-image:none;">
 
 					<img src="<?php echo @$value['p_gioi_thieu_img']; ?>" class="img-responsive" alt="img">
 
