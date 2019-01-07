@@ -14,9 +14,9 @@ body{
 	.box-product{
 		
 		&:hover{
-			.-content{				
+			/*.-content{				
 				@include p-web(transition-delay, 2s);
-			}
+			}*/
 			.-des{					
 				display: block;			
 			}
