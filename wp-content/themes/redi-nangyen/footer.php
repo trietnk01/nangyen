@@ -206,9 +206,15 @@ $source_social=get_field('op_inf_sn_repeat','option'); ?>
 
 							</span>
 
-							<a href="tel:<?php echo get_field('tel_alo','option'); ?>" class="">
+							<a href="tel:<?php echo get_field('tel_alo','option'); ?>" class="kara-tel-alo">
 
 								<?php echo get_field('sdt','option'); ?>
+
+							</a>
+							-
+							<a href="tel:<?php echo get_field('tel_alo_2','option'); ?>" class="kara-tel-alo">
+
+								<?php echo get_field('sdt_2','option'); ?>
 
 							</a>
 
@@ -290,7 +296,15 @@ $source_social=get_field('op_inf_sn_repeat','option'); ?>
 <?php do_action("p_add_code_end_body") ?>
 
 <?php include get_template_directory() . '/af_body.php'; ?>
-
+<div class="dienthoaipan">
+	<div class="ksa">
+		<a href="tel:<?php echo get_field('tel_alo_2','option'); ?>"><i class="fa fa-phone" aria-hidden="true"></i></a>
+	</div>	
+	<div class="amk">
+		<a href="tel:<?php echo get_field('tel_alo_2','option'); ?>"><?php echo get_field('sdt_2','option'); ?></a>
+	</div>
+	<div class="clr"></div>
+</div>
 </body>
 
 </html>

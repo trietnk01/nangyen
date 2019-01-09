@@ -110,7 +110,7 @@ if( !empty($source_thumbnail_rpt) ){
                 <div class="-des">
                   <?php echo wp_trim_words( @$excerpt, 30, '...' ) ; ?>
                 </div>
-                <a href="tel:<?php echo get_field('tel_alo','option'); ?>" class="btn-gra -hotline f2-df">
+                <a href="tel:<?php echo get_field('tel_alo_2','option'); ?>" class="btn-gra -hotline f2-df">
                   HOTLINE  <?php echo get_field('sdt_2','option'); ?>
                 </a>
               </div>
