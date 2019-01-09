@@ -622,7 +622,7 @@
 
 
 
-                                    <form role="search" id="searchform" action="<?php echo trailingslashit( home_url() ) ?>" method="get">
+                                    <form role="search" id="searchform" action="<?php echo trailingslashit( home_url() ) ?>" method="POST">
 
 
 

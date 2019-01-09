@@ -292,7 +292,7 @@
 .dienthoaipan{
 	position: fixed;
 	bottom: 90px;
-	right: 170px;
+	right: 5px;
 	z-index: 999;
 	@media(max-width: 576px){
 		right: 20px;
@@ -300,7 +300,7 @@
 	.ksa{
 		float: left;
 		a{
-			padding: 10px 22px;
+			padding: 0px 13px;
 			background-color: #ff0000;
 			color: #ffffff;
 			font-size: 30px;
@@ -311,7 +311,7 @@
 	.amk{
 		float: left;
 		margin-left: 10px;
-		margin-top: 15px;
+		margin-top: 7px;
 		@media(max-width: 576px){
 			display: none;
 		}
@@ -324,6 +324,27 @@
 			-webkit-text-fill-color: transparent;
 			display: block;
 			font-family: $f_bold;
+			@include p-web(transition,all 0.5s);
+			&:hover{
+				background: #ff0000;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;		
+			}	
 		}
+	}
+}
+.bg-text{
+	a{
+		background: -webkit-linear-gradient(#f8eee0, #c78829);
+		background: -o-linear-gradient(#f8eee0, #c78829);
+		background: linear-gradient(#f8eee0, #c78829);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@include p-web(transition,all 0.5s);
+		&:hover{
+			background: #ff0000;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;		
+		}	
 	}
 }

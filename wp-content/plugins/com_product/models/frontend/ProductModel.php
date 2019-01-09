@@ -73,7 +73,8 @@ class ProductModel{
 		$result = $wpdb->get_results($sql,ARRAY_A);		
 		return $result;
 	}
-	public function prepare_items(){								
+	public function prepare_items(){						
+		$this->setItems($this->table_data());
 		$this->setTotalIems($this->total_items());		
 		$wpQuery=new WP_Query();
 		$wpQuery=$this->table_data();		
@@ -90,14 +91,15 @@ class ProductModel{
 	private function table_data(){
 		$wpQuery=$this->getWpQuery();		
 		$currentPage=1;	
-		if(!empty(@$_GET["trang"])){
-			$currentPage=@$_GET["trang"];
-		}			            
+		if(!empty(@$_POST["filter_page"]))			
+            $currentPage=@$_POST["filter_page"];
         $offset 	= ($currentPage - 1) * $this->getPerpage();	 	
         $args = $wpQuery->query;
         $args["posts_per_page"]=$this->getPerpage();
         $args["offset"]=$offset;
-        $args["paged"]=$currentPage;      
+        $args["paged"]=$currentPage;
+        $args['orderby']='id';
+        $args['order']='DESC';        
 		$wpQuery->query($args);				
 		return $wpQuery;
 	}

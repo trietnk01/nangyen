@@ -158,11 +158,7 @@ $source_social=get_field('op_inf_sn_repeat','option'); ?>
 
 							</span>
 
-							<a href="javascript:void(0);" class="">								
-
-								<?php echo get_field('dia_chi','option'); ?>
-
-							</a>
+							<?php echo get_field('dia_chi','option'); ?>
 
 						</li>
 
