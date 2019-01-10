@@ -291,19 +291,25 @@
 }
 .dienthoaipan{
 	position: fixed;
-	bottom: 90px;
-	right: 5px;
-	z-index: 999;
+    bottom: 90px;
+    right: 5px;
+    z-index: 999;
+    background-color: #70030085;
+    padding: 5px 10px;
+    border: 1px solid #CB9038;
+    border-radius: 15px;
 	@media(max-width: 576px){
 		right: 20px;
 	}
 	.ksa{
 		float: left;
 		a{
-			padding: 0px 13px;
-			background-color: #ff0000;
-			color: #ffffff;
-			font-size: 30px;
+			padding: 0px 10px;
+			background: -webkit-linear-gradient(#f8eee0, #c78829);
+			background: -o-linear-gradient(#f8eee0, #c78829);
+			background: linear-gradient(#f8eee0, #c78829);
+			color: #690000;
+			font-size: 25px;
 			border-radius: 34px;
 			display: block;
 		}
@@ -311,7 +317,7 @@
 	.amk{
 		float: left;
 		margin-left: 10px;
-		margin-top: 7px;
+		margin-top: 5px;
 		@media(max-width: 576px){
 			display: none;
 		}

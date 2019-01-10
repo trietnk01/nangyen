@@ -377,8 +377,11 @@ $pagination=$zController->getPagination("Pagination",$arrPagination);
                   while (have_posts()) {
 
                     the_post();                            
-
-                    the_title();
+                    ?>
+                    <div class="wow fadeIn">
+                      <?php the_title(); ?>
+                    </div>
+                    <?php                    
 
                   }
 
