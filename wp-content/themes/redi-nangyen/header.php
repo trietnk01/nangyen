@@ -630,7 +630,7 @@
 
 
 
-                                            <input value="" name="s" type="search" placeholder="<?php echo t_pll('Tìm kiếm',"Search") ?>"/>
+                                            <input value="" name="s" type="search" placeholder="<?php echo t_pll('Tìm kiếm',"Search") ?>" autocomplete="off"/>
 
 
 
